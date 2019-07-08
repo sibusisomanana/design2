@@ -1,0 +1,26 @@
+<!--
+  Generated template for the ArtistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Welcome</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  
+
+        <p *ngFor="let ar of news?.articles;let k = index" (click)="itemSelected(item)">
+          <img src="{{ar.urlToImage}}">
+          {{ar.title}} 
+
+
+        </p> 
+      
+
+</ion-content>
